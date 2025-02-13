@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");
     const titles = document.querySelectorAll("h1, h2");
+    const videos = document.querySelectorAll("video");
 
     function revealOnScroll() {
         sections.forEach((section) => {
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 section.classList.add("fade-in");
             }
         });
-
+        
         titles.forEach((title) => {
             const titleTop = title.getBoundingClientRect().top;
             if (titleTop < window.innerHeight - 50) {
@@ -18,6 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    function checkVideoPlayback() {
+        videos.forEach(video => {
+            video.addEventListener("mouseover", () => video.play());
+            video.addEventListener("mouseout", () => video.pause());
+        });
+    }
+
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
+    checkVideoPlayback();
 });
