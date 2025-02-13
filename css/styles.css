@@ -1,14 +1,14 @@
-/* Estilos generales */
+/* Estilos Generales */
 body {
     font-family: 'Arial', sans-serif;
     font-size: 18px;
     background-color: #f8f9fa;
-    color: #000000;
+    color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Video de fondo */
@@ -20,15 +20,15 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* Encabezado */
 header {
     background: rgba(34, 34, 34, 0.8);
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 20px 0;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -62,111 +62,13 @@ section {
     border-radius: 10px;
     position: relative;
     z-index: 1;
-}
-
-h2 {
-    font-size: 28px;
-    color: #222;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-/* Botones y enlaces */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.btn:hover {
-    background: #0056b3;
-}
-
-/* Redes Sociales */
-.social-links a {
-    display: inline-block;
-    margin: 10px;
-    font-size: 20px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #0056b3;
-}
-
-/* Imágenes */
-.img-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.img-container img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Videos */
-.video-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.video-container video {
-    width: 120%;
-    max-width: 800px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} 
-html, body {
-    height: 100%;
-    overflow: auto;
-    scroll-behavior: smooth;
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-h1, h2 {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
