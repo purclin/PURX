@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Imagen de fondo -->
-    <img src="img/Im1.jpg" class="background-image" alt="Imagen de fondo">
-
+    <!-- Video de fondo en el encabezado -->
     <header>
-        <h1 class="fade-in">Raúl Zadquiel Martínez Cano</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="video-header">
+            <video autoplay loop muted playsinline>
+                <source src="videos/fondo.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="header-content">
+                <h1 class="fade-in">Raúl Zadquiel Martínez Cano</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+    
+    <!-- Imagen de fondo para el resto de la página -->
+    <img src="img/Im1.jpg" class="background-image" alt="Imagen de fondo">
+    
+    <!-- Menú destacado -->
+    <div class="menu-container">
+        <div class="menu-item"><a href="#sobre-mi">Sobre Mí</a></div>
+        <div class="menu-item"><a href="#portafolio">Portafolio</a></div>
+        <div class="menu-item"><a href="#contacto">Contacto</a></div>
+    </div>
     
     <section id="sobre-mi" class="fade-in">
         <h2>Sobre Mí</h2>
@@ -41,10 +57,6 @@
             <li>Tehmplo, Tulum (2023-2025) – Producción & Fotografía</li>
         </ul>
         <div class="video-container">
-            <video controls>
-                <source src="videos/fondo.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
-            </video>
             <video controls>
                 <source src="videos/paisaje.mp4" type="video/mp4">
                 Tu navegador no soporta la reproducción de videos.
