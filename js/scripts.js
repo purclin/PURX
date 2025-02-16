@@ -26,6 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Música de fondo con botón de activación
+    const musicButton = document.getElementById("play-music");
+    const backgroundMusic = document.getElementById("background-music");
+
+    musicButton.addEventListener("click", function () {
+        if (backgroundMusic.paused) {
+            backgroundMusic.play();
+            musicButton.textContent = "⏸ Pausar Música";
+        } else {
+            backgroundMusic.pause();
+            musicButton.textContent = "🎵 Activar Música";
+        }
+    });
+
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
     checkVideoPlayback();
