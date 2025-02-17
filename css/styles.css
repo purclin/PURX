@@ -68,7 +68,7 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     font-weight: bold;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.9s ease-in-out;
     color: black;
 }
 
@@ -92,7 +92,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.6s ease-in-out;
     display: inline-block;
 }
 
@@ -113,7 +113,7 @@ section {
     z-index: 1;
     opacity: 0;
     transform: translateY(80px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 2s ease-out, transform 2s ease-out;
 }
 
 /* Animaciones */
@@ -124,8 +124,8 @@ section {
 
 h1, h2 {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transform: translateY(80px);
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
 }
 
 /* Barra de desplazamiento personalizada */
